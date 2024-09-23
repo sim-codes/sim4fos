@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIM FOR FOSSA - Supportive, Instructive, and Mindful (SIM)</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+        * {
+            font-family: 'Playfair Display', serif;
+        }
+
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -48,13 +55,13 @@
     </nav>
 
     <section id="hero" class="py-20 bg-gradient-to-r from-gray-800 to-gray-900">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+        <div class="container mx-auto px-4 flex flex-col gap-3 md:gap-10 md:flex-row items-center">
             <div class="flex gap-2 justify-center">
                 <div class="grid grid-flow-row grid-rows-5 gap-2">
                     <img 
                         src="assets/segun.png" 
                         alt="SIM Codes 3" 
-                        class="row-span-3 md:w-[230px] min-w-[130px] min-h-[200px] md:h-[300px] rounded-xl object-cover"
+                        class="row-span-3 md:w-[230px] w-[130px] h-[200px] md:h-[300px] rounded-xl object-cover"
                     />
                     <img 
                         src="assets/nextechies.jpg" 
@@ -66,20 +73,36 @@
                     <img 
                         src="assets/simcodes.png" 
                         alt="SIM Codes 2" 
-                        class="row-span-2 md:w-[230px] min-w-[130px] min-h-full md:h-full rounded-xl object-cover"
+                        class="row-span-2 md:w-[230px] w-[130px] min-h-full md:h-full rounded-xl object-cover"
                     />
                     <img 
-                        src="assets/simcodes.png" 
+                        src="assets/luncheon.jpeg" 
                         alt="SIM Codes 3" 
-                        class="row-span-3 md:w-[230px] min-w-[130px] min-h-[200px] md:h-[300px] rounded-xl object-cover"
+                        class="row-span-3 md:w-[230px] w-[130px] h-[200px] md:h-[300px] rounded-xl object-cover"
                     />
                 </div>
             </div>
 
-            <div class="md:w-1/2 text-center md:text-left">
+            <div class="md:w-1/2 text-justify md:text-left">
                 <h1 class="text-5xl font-bold mb-4 fade-in text-blue-400">Ibrahim Michael</h1>
-                <p class="text-xl mb-6 fade-in">I am running for FOSSA President to promote selfless services.</p>
-                <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-600 transition duration-300">Get in Touch</a>
+
+                <p class="text-xl mb-6 fade-in">
+                    I, Ibrahim Michael Oluwasegun, am excited to announce my candidacy for President of the Faculty of Science Student Association (FOSSA) at Adeleke University.
+                </p>
+                <p>
+                    As a candidate, my vision is guided by the principles of being Supportive, Instructive, and Mindful—the SIM approach. 
+                    With this in mind, I aim to introduce innovative ideas and improvements to our faculty, including:
+                </p>
+                <ul class="list-disc mx-5">
+                    <li>Advocating for students' needs and ensuring their concerns are addressed by the appropriate authorities</li>
+                    <li>Promoting collaboration among departments to strengthen our faculty</li>
+                    <li>Partnering with departmental executives to ensure students have equitable access to faculty resources</li>
+                    <li>
+                        Improving the accessibility and functionality of laboratories for studentsWorking with the Social Director 
+                        to enhance the faculty's social life and foster a sense of community
+                    </li>
+                </ul>
+                <!-- <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-600 transition duration-300">Get in Touch</a> -->
             </div>
         </div>
     </section>
@@ -94,7 +117,10 @@
                 </div>
                 <div class="timeline-item">
                     <h3 class="text-xl font-semibold mb-2 text-blue-300">200 Level</h3>
-                    <p>I launched a website for students to report lost and found items. Additionally, I participated in tutoring my various departments.</p>
+                    <p>
+                        I launched a website for students to report lost and found items. Additionally, 
+                        I participated in tutoring my various departments, tutored fellow students, and became president of NexTechies.
+                    </p>
                 </div>
                 <div class="timeline-item">
                     <h3 class="text-xl font-semibold mb-2 text-blue-300">300 Level</h3>
@@ -140,7 +166,7 @@
                     <img src="./assets/web1.png" alt="Achievement 4" class="w-full h-96 object-cover transition duration-300 hover:scale-105">
                     <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 bg-opacity-75">
                         <h3 class="text-xl text-white font-bold">Web Design 1.0</h3>
-                        <p class="mt-2 text-sm text-gray-300">With the help of my NexTechies EXCOS, I hosted a free website development class.</p>
+                        <p class="mt-2 text-sm text-gray-300">With the help NexTechies EXCOS, I hosted a free website development class.</p>
                     </div>
                 </div>
             </div>
@@ -166,7 +192,7 @@
 
     <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto text-center">
-            <p>&copy; 2024 Supportive, Instructive, and Mindful (SIM). All rights reserved.</p>
+            <p>&copy; 2024 Supportive, Instructive, and Mindful (SIM). All rights reserved. | Design and Developed by <a href="https://simportfolio.netlify.app/" class="underline" target="_blank">SIM</span></p>
         </div>
     </footer>
 
