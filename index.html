@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIM FOR FOSSA - Supportive, Instructive, and Mindful (SIM)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 2px solid #4B5563;
+            margin-bottom: 2rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 0;
+            width: 1rem;
+            height: 1rem;
+            background: #4B5563;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <nav class="bg-gray-800 text-white p-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">Vote SIM</a>
+            <div>
+                <a href="#hero" class="mx-2 hover:text-blue-400 transition duration-300">Home</a>
+                <a href="#timeline" class="mx-2 hover:text-blue-400 transition duration-300">Timeline</a>
+                <a href="#gallery" class="mx-2 hover:text-blue-400 transition duration-300">Gallery</a>
+                <a href="#contact" class="mx-2 hover:text-blue-400 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="py-20 bg-gradient-to-r from-gray-800 to-gray-900">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="flex gap-2 justify-center">
+                <div class="grid grid-flow-row grid-rows-5 gap-2">
+                    <img 
+                        src="assets/segun.png" 
+                        alt="SIM Codes 3" 
+                        class="row-span-3 md:w-[230px] min-w-[130px] min-h-[200px] md:h-[300px] rounded-xl object-cover"
+                    />
+                    <img 
+                        src="assets/nextechies.jpg" 
+                        alt="SIM Codes 1" 
+                        class="row-span-2 md:w-[230px] w-[130px] h-full md:h-full rounded-xl object-cover"
+                    />
+                    </div>
+                    <div class="grid grid-flow-row grid-rows-5 gap-2">
+                    <img 
+                        src="assets/simcodes.png" 
+                        alt="SIM Codes 2" 
+                        class="row-span-2 md:w-[230px] min-w-[130px] min-h-full md:h-full rounded-xl object-cover"
+                    />
+                    <img 
+                        src="assets/simcodes.png" 
+                        alt="SIM Codes 3" 
+                        class="row-span-3 md:w-[230px] min-w-[130px] min-h-[200px] md:h-[300px] rounded-xl object-cover"
+                    />
+                </div>
+            </div>
+
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-5xl font-bold mb-4 fade-in text-blue-400">Ibrahim Michael</h1>
+                <p class="text-xl mb-6 fade-in">I am running for FOSSA President to promote selfless services.</p>
+                <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-600 transition duration-300">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10 text-blue-400">My Journey</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="timeline-item">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-300">100 Level</h3>
+                    <p>I focused on studying and adapting to the school environment.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-300">200 Level</h3>
+                    <p>I launched a website for students to report lost and found items. Additionally, I participated in tutoring my various departments.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-300">300 Level</h3>
+                    <ul>
+                        <li>I continued offering tutoring, both in academics and technology. I was selected to represent our school at Digital Osun Day and TechExplore at Babcock University.</li>
+                        <li>During my SIWES, I hosted a free introductory class on website development</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-300">400 Level</h3>
+                    <p>I was appointed the acting class representative, furthering my involvement in student leadership.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10 text-blue-400">Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="./assets/michael-bu.jpg" alt="Achievement 1" class="w-full h-96 object-cover transition duration-300 hover:scale-105">
+                    <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 bg-opacity-75">
+                        <h3 class="text-xl text-white font-bold">BUCC TechExplore</h3>
+                        <p class="mt-2 text-sm text-gray-300">Michael, Eniola, Rodiyah, Alex and Dotun</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="./assets/michael-bu.jpg" alt="Achievement 2" class="w-full h-96 object-cover transition duration-300 hover:scale-105">
+                    <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 bg-opacity-75">
+                        <h3 class="text-xl text-white font-bold">Student Government Leadership</h3>
+                        <p class="mt-2 text-sm text-gray-300">Led key initiatives in student government, improving campus life for all students.</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="./assets/michael-taking-tutorial.jpg" alt="Achievement 3" class="w-full h-96 object-cover transition duration-300 hover:scale-105">
+                    <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 bg-opacity-75">
+                        <h3 class="text-xl text-white font-bold">Tutorial Session</h3>
+                        <p class="mt-2 text-sm text-gray-300">Michael tutoring.</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="./assets/web1.png" alt="Achievement 4" class="w-full h-96 object-cover transition duration-300 hover:scale-105">
+                    <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 bg-opacity-75">
+                        <h3 class="text-xl text-white font-bold">Web Design 1.0</h3>
+                        <p class="mt-2 text-sm text-gray-300">With the help of my NexTechies EXCOS, I hosted a free website development class.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10 text-blue-400">Leave a message</h2>
+            <form x-data="{ number: '', message: '' }" @submit.prevent="alert('Message sent!');" class="max-w-lg mx-auto bg-gray-700 p-8 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label for="number" class="block mb-2 font-semibold text-blue-300">Want me to say hi? (Optional)</label>
+                    <input type="text" id="name" placeholder="Enter your phone number (optional)" x-model="number" class="w-full p-2 border rounded bg-gray-600 text-white border-gray-500 focus:border-blue-400 focus:outline-none transition duration-300">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block mb-2 font-semibold text-blue-300">Message</label>
+                    <textarea id="message" x-model="message" placeholder="Leave a thought" required class="w-full p-2 border rounded bg-gray-600 text-white border-gray-500 focus:border-blue-400 focus:outline-none transition duration-300 h-32" aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-600 transition duration-300 w-full">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Supportive, Instructive, and Mindful (SIM). All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.utils.toArray('.timeline-item').forEach((item, index) => {
+            gsap.from(item, {
+                opacity: 0,
+                x: -50,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: item,
+                    start: 'top 80%',
+                    end: 'bottom 20%',
+                    toggleActions: 'play none none reverse'
+                }
+            });
+        });
+
+        gsap.utils.toArray('#gallery img').forEach((img, index) => {
+            gsap.from(img, {
+                opacity: 0,
+                y: 50,
+                duration: 0.8,
+                delay: index * 0.2,
+                scrollTrigger: {
+                    trigger: img,
+                    start: 'top 80%',
+                    end: 'bottom 20%',
+                    toggleActions: 'play none none reverse'
+                }
+            });
+        });
+    </script>
+</body>
+</html>
