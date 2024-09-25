@@ -84,13 +84,20 @@
                 </div>
             </div>
 
-            <div class="md:w-1/2 text-justify md:text-left">
-                <h1 class="text-5xl font-bold mb-4 fade-in text-blue-400">Ibrahim Michael</h1>
+            <div class="md:w-1/2 text-left">
+                <h1 class="text-5xl font-bold mb-4 fade-in text-blue-400">SIM for Faculty President</h1>
 
                 <p class="text-xl mb-6 fade-in">
-                    I, Ibrahim Michael Oluwasegun, am excited to announce my candidacy for President of the Faculty of Science Student Association (FOSSA) at Adeleke University.
+                    I, Segun Ibrahim Michael in a bid to move this faculty forward is running for the presidential office of the Faculty of Science Students Association (FOSSA), Adeleke University.
+                    With a proven history of leadership and selfless service to the faculty, I have consistently supported and birthed innovative ideas to move the faculty forward.
                 </p>
-                <p>
+                <ul class="list-disc mx-5">
+                    <li>I am the co-founder and president of NexTechies. A first of its kind Tech community in Adeleke University meant to build and grow the skills and interests of “Techies” here in Adeleke University.</li>
+                    <li>Under my leadership, NexTechies has not only empowered students to hone their tech skills, but it has also become a beacon of possibility—a symbol of what we can achieve when we come together.</li>
+                    <li>By virtue of my above qualities, I have represented Adeleke University at the TechExplore program hosted by the Babcock University Computer Club (BUCC).</li>
+                    <li>On several occasions, I have spearheaded tutorials across various departments, putting in my very best to elevate the academic standards of the faculty.</li>
+                </ul>
+                <p class="my-2">
                     As a candidate, my vision is guided by the principles of being Supportive, Instructive, and Mindful—the SIM approach. 
                     With this in mind, I aim to introduce innovative ideas and improvements to our faculty, including:
                 </p>
@@ -118,8 +125,8 @@
                     <h3 class="text-xl font-semibold mb-2 text-blue-300">200 Level</h3>
                     <ul class="list-disc mx-5">
                         <li>I launched a website for Adeleke University students to report lost and found items.</li>
-                        <li>I participated in tutoring various departments and I allocate when necessary.</li>
-                        <li>I co-founded a NexTechies (A tech community) with my course mates and was elected president.</li>
+                        <li>I participated in tutoring various departments and I allocate tutor(s) when necessary.</li>
+                        <li>I co-founded NexTechies and was elected president.</li>
                     </ul>
                 </div>
                 <div class="timeline-item">
@@ -140,19 +147,12 @@
     <section id="gallery" class="py-20 bg-gray-900">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-10 text-blue-400">Gallery</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="relative overflow-hidden rounded-lg shadow-lg">
                     <img src="./assets/michael-bu.jpg" alt="Achievement 1" class="w-full h-96 object-cover transition duration-300 hover:scale-105">
                     <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 bg-opacity-75">
                         <h3 class="text-xl text-white font-bold">BUCC TechExplore</h3>
                         <p class="mt-2 text-sm text-gray-300">Michael, Eniola, Rodiyah, Alex and Dotun</p>
-                    </div>
-                </div>
-                <div class="relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="./assets/michael-bu.jpg" alt="Achievement 2" class="w-full h-96 object-cover transition duration-300 hover:scale-105">
-                    <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 bg-opacity-75">
-                        <h3 class="text-xl text-white font-bold">Student Government Leadership</h3>
-                        <p class="mt-2 text-sm text-gray-300">Led key initiatives in student government, improving campus life for all students.</p>
                     </div>
                 </div>
                 <div class="relative overflow-hidden rounded-lg shadow-lg">
@@ -166,7 +166,7 @@
                     <img src="./assets/web1.png" alt="Achievement 4" class="w-full h-96 object-cover transition duration-300 hover:scale-105">
                     <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 bg-opacity-75">
                         <h3 class="text-xl text-white font-bold">Web Design 1.0</h3>
-                        <p class="mt-2 text-sm text-gray-300">With the help NexTechies EXCOS, I hosted a free website development class.</p>
+                        <p class="mt-2 text-sm text-gray-300">With the help of NexTechies EXCOS, I hosted a free website development class.</p>
                     </div>
                 </div>
             </div>
@@ -176,10 +176,10 @@
     <section id="contact" class="py-20 bg-gray-800">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-10 text-blue-400">Leave a message</h2>
-            <form x-data="{ number: '', message: '' }" @submit.prevent="alert('Message sent!');" class="max-w-lg mx-auto bg-gray-700 p-8 rounded-lg shadow-md">
+            <form method="POST" data-netlify="true" class="max-w-lg mx-auto bg-gray-700 p-8 rounded-lg shadow-md">
                 <div class="mb-4">
                     <label for="number" class="block mb-2 font-semibold text-blue-300">Want me to say hi? (Optional)</label>
-                    <input type="text" id="name" placeholder="Enter your phone number (optional)" x-model="number" class="w-full p-2 border rounded bg-gray-600 text-white border-gray-500 focus:border-blue-400 focus:outline-none transition duration-300">
+                    <input type="text" id="number" placeholder="Enter your phone number (optional)" x-model="number" class="w-full p-2 border rounded bg-gray-600 text-white border-gray-500 focus:border-blue-400 focus:outline-none transition duration-300">
                 </div>
                 <div class="mb-4">
                     <label for="message" class="block mb-2 font-semibold text-blue-300">Message</label>
